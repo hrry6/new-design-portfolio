@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Gambar/logo-web.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>Form</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav data-aos="fade-down">
+        <div class="nav-center">
+        <h1 class="logo">Portfo<span>lio</span></h1>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html">Beranda</a></li>
+          <li class="nav-item d-trigger">
+            <a href="about.html">Tentang</a>
+            <div class="dropdown">
+              <ul>
+                <li><a href="about.html#tentang">Tentang</a></li>
+                <li><a href="about.html#hobi">Hobi</a></li>
+                <li><a href="about.html#skill">Skill</a></li>
+                <li><a href="about.html#riwayat-pendidikan">Riwayat Pendidikan</a></li>
+                <li><a href="about.html#riwayat-organisasi">Riwayat Organisasi</a></li>
+                <li><a href="about.html#riwayat-prestasi">Riwayat Prestasi</a></li>
+                <li><a href="about.html#mata-pelajaran">Nilai</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="form.html">Form</a>
+          </li>
+          <li>
+            <a href="project.html">Projek</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+      </nav>
+      <!-- End Navbar -->
+
+      <!-- Form Update Data Pribadi -->
+      <div class="form-container" data-aos="fade-right" data-aos-delay="250">
+        <h2>Form Update Data Pribadi</h2>
+      <form action="submit" class="page" data-aos="fade-right" data-aos-delay="500">
+        <label for="nama">Nama :</label>
+        <input type="text" name="nama" id="nama">
+        
+        <label for="email">Email :</label>
+        <input type="email" name="email" id="email">
+
+        <label for="password">Password :</label>
+        <input type="password" name="password" id="password">
+        
+        <label for="tempat">Tempat </label>
+        <label for="tanggal">Tanggal :</label>
+        <div class="form-center">
+            <input type="text" name="tempat" id="tempat" class="ttl">
+            <input type="date" name="tanggal" id="tanggal" class="ttl">
+        </div>
+        
+        <label for="telfon">Nomor Telfon :</label>
+        <input type="text" name="telfon" id="telfon">
+
+        <label for="gender">Gender :</label>
+        <div class="f-space">  
+        <div class="c-row c-gender">
+        <input type="radio" name="gender" id="cowo" value="cowo">
+        <label for="cowo">Cowo</label>
+        </div>
+        <div class="c-row c-gender">
+        <input type="radio" name="gender" id="cewe" value="cewe">
+        <label for="cewe">Cewe</label>
+        </div>
+        </div>
+
+        <label for="trans">Transportasi :</label>
+        <div class="f-space">
+        <div class="c-row c-kendaraan">
+        <input type="checkbox" name="trans" id="motor" value="motor">
+        <label for="motor">Motor</label>
+        </div>
+        <div class="c-row c-kendaraan">
+        <input type="checkbox" name="trans" id="mobil" value="mobil">
+        <label for="mobil">Mobil</label>
+        </div>
+        <div class="c-row c-kendaraan">
+        <input type="checkbox" name="trans" id="sepeda" value="sepeda">
+        <label for="sepeda">Sepeda</label>
+        </div>
+        </div>
+        <br>
+        <input type="submit" value="Submit" data-aos="fade-right" data-aos-delay="650" data-aos-offset="50">
+      </form>
+      </div>
+      <!-- End Form -->
+
+      <!-- Form Deskripsi Diri -->
+      <div class="form-container" data-aos="fade-right" data-aos-delay="250">
+        <h2>Form Update Deskripsi</h2>
+      <form action="submit" class="page" data-aos="fade-right" data-aos-delay="500">        
+        <label for="deskripsi">Deskripsi Diri :</label>
+        <textarea class="deskripsi" name="" id="deskripsi" cols="30" rows="10"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Submit" data-aos="fade-right" data-aos-delay="650" data-aos-offset="50">
+        <br>
+      </form>
+      </div>
+      <!-- End Form -->
+
+      <!-- Form Gambar -->
+      <div class="form-container" data-aos="fade-right" data-aos-delay="250">
+        <h2>Form Update Gambar</h2>
+      <form action="submit" class="page" data-aos="fade-right" data-aos-delay="500">        
+        <label for="gambar">Gambar :</label>
+        <br>
+        <input type="file" class="deskripsi">
+        <br>
+        <br>
+        <input type="submit" value="Submit" data-aos="fade-right" data-aos-delay="650" data-aos-offset="50">
+        <br>
+      </form>
+      </div>
+      <!-- End Form -->
+
+      <!-- Form Update Hobi -->
+      <div class="form-container" data-aos="fade-right" data-aos-delay="250">
+        <h2>Form Update Hobi</h2>
+      <form action="submit" class="page" data-aos="fade-right" data-aos-delay="500">
+        <label for="game">Hobi :</label>
+        <div class="f-space">  
+          <div class="c-row c-gender">
+          <input type="checkbox" name="game" id="game" value="game">
+          <label for="game">Bermain Game</label>
+          </div>
+          <div class="c-row c-gender">
+          <input type="checkbox" name="gitar" id="gitar" value="gitar">
+          <label for="gitar">Bermain Gitar</label>
+          </div>
+          </div>        
+          <div class="f-space">  
+          <div class="c-row c-gender">
+          <input type="checkbox" name="menyanyi" id="menyanyi" value="menyanyi">
+          <label for="menyanyi">Menyanyi</label>
+          </div>
+          <div class="c-row c-gender">
+          <input type="checkbox" name="berenang" id="berenang" value="berenang">
+          <label for="berenang">Berenang</label>
+          </div>
+          </div>
+        <label for="hobi-lain">Hobi Lain :</label>
+        <input type="text" id="hobi-lain">
+        <br>
+        <br>
+        <input type="submit" value="Submit" data-aos="fade-right" data-aos-delay="650" data-aos-offset="50">
+      </form>
+      </div>
+      <!-- End Form -->
+
+      <!-- Form Update Kemampuan -->
+      <div class="form-container" data-aos="fade-right" data-aos-delay="250">
+        <h2>Form Update Skill</h2>
+      <form action="submit" class="page" data-aos="fade-right" data-aos-delay="500"> 
+        <label for="html">Skill :</label>
+        <div class="f-space">  
+          <div class="c-row c-gender">
+          <input type="checkbox" name="html" id="html" value="html">
+          <label for="html">Html</label>
+          </div>
+          <div class="c-row c-gender">
+          <input type="checkbox" name="css" id="css" value="css">
+          <label for="css">CSS</label>
+          </div>
+          </div>        
+          <div class="f-space">  
+          <div class="c-row c-gender">
+          <input type="checkbox" name="javascript" id="javascript" value="javascript">
+          <label for="javascript">Javascript</label>
+          </div>
+          <div class="c-row c-gender">
+          <input type="checkbox" name="php" id="php" value="php">
+          <label for="php">PHP</label>
+          </div>
+          </div>       
+        <label for="kemampuan">Skill Lain :</label>
+        <input type="text" id="kemampuan">
+        <br>
+        <br>
+        <input type="submit" value="Submit" data-aos="fade-right" data-aos-delay="650" data-aos-offset="50">
+      </form>
+      </div>
+      <!-- End Form -->
+
+      <!-- Form Update Riwayat Pendidikan -->
+      <div class="form-container" data-aos="fade-right" data-aos-delay="250">
+        <h2>Form Update Riwayat Pendidikan</h2>
+      <form action="submit" class="page" data-aos="fade-right" data-aos-delay="500">
+        <div class="f-number">        
+        <label for="jenjang">Jenjang :</label>
+        <select>
+          <option value="tk">TK</option>
+          <option value="sd">SD</option>
+          <option value="smp">SMP</option>
+          <option value="sma/smk">SMA/SMK</option>
+          <option value="kuliah">Kuliah</option>
+        </select>
+        </div>
+        <label for="instansi">Nama Instansi :</label>
+        <input type="text" id="instansi">
+
+        <div class="f-space">
+        <div class="f-number">
+        <label for="t-masuk">Tahun Masuk :</label>
+        <input type="number" id="t-masuk" value="2011">
+        </div>
+        <div class="f-number">
+        <label for="t-lulus">Tahun Lulus :</label>
+        <input type="number" id="t-lulus" value="2012">
+        </div>
+        </div>
+        <br>
+        <input type="submit" value="Submit" data-aos="fade-right" data-aos-delay="650" data-aos-offset="50">
+      </form>
+      </div>
+      <!-- End Form -->
+
+      <!-- Form Update Pengalaman Organisasi -->
+      <div class="form-container" data-aos="fade-right" data-aos-delay="250">
+        <h2>Form Update Pengalaman Organisasi</h2>
+      <form action="submit" class="page" data-aos="fade-right" data-aos-delay="500">
+        <label for="organisasi">Nama Organisasi :</label>
+        <input type="text" id="organisasi">
+
+        <label for="jabatan">Jabatan :</label>
+        <input type="text" id="jabatan">
+
+        <div class="f-number">
+        <label for="t-aktif">Tahun Aktif :</label>
+        <input type="number" id="t-aktif" value="2022">
+      </div>
+        <br>
+        <input type="submit" value="Submit" data-aos="fade-right" data-aos-delay="650" data-aos-offset="50">
+      </form>
+      </div>
+      <!-- End Form -->
+
+      <!-- Form Update Prestasi -->
+      <div class="form-container" data-aos="fade-right" data-aos-delay="250">
+        <h2>Form Update Prestasi</h2>
+      <form action="submit" class="page" data-aos="fade-right" data-aos-delay="500">
+        <label for="prestasi">Nama Prestasi :</label>
+        <input type="text" id="prestasi">
+
+        <label for="tingkat">Tingkat :</label>
+        <input type="text" id="tingkat">
+
+        <div class="f-number">
+        <label for="peringkat">Peringkat :</label>
+        <input type="number" id="peringkat" value="1">
+        </div>   
+        <br>
+        <input type="submit" value="Submit" data-aos="fade-right" data-aos-delay="650" data-aos-offset="50">
+      </form>
+      </div>
+      <!-- End Form -->
+
+      <!-- Form Nilai -->
+      <div class="form-container last" data-aos="fade-right" data-aos-delay="250">
+        <h2>Form Nilai</h2>
+      <form action="submit" class="page" data-aos="fade-right" data-aos-delay="500">
+        <label for="pelajaran">Nama Pelajaran :</label>
+        <input type="text" id="pelajaran">
+
+        <label for="pengetahuan-semester-1">Pengetahuan :</label>
+        <br>
+        <div class="f-space">
+        <div class="f-number">
+        <label for="pengetahuan-semester-1">Semester 1 :</label>
+        <input type="number" value="90" id="pengetahuan-semester-1">
+        </div>
+        <div class="f-number">
+        <label for="pengetahuan-semester-2">Semester 2 :</label>
+        <input type="number" value="90" id="pengetahuan-semester-2">
+        </div>
+        </div>
+        <div class="f-space">
+        <div class="f-number">
+        <label for="pengetahuan-semester-3">Semester 3 :</label>
+        <input type="number" value="90" id="pengetahuan-semester-3">
+        </div>
+        <div class="f-number">
+        <label for="pengetahuan-semester-4">Semester 4 :</label>
+        <input type="number" value="90" id="pengetahuan-semester-4">
+        </div>
+        </div>
+        <div class="f-space">
+        <div class="f-number">
+        <label for="pengetahuan-semester-5">Semester 5 :</label>
+        <input type="number" value="90" id="pengetahuan-semester-5">
+        </div>
+        <div class="f-number">
+        <label for="pengetahuan-semester-6">Semester 6 :</label>
+        <input type="number" value="90" id="pengetahuan-semester-6">
+        </div>
+        </div>
+        <br>
+
+        <label for="keterampilan-semester-1">Keterampilan :</label>
+        <br>
+        <div class="f-space">
+        <div class="f-number">
+        <label for="keterampilan-semester-1">Semester 1 :</label>
+        <input type="number" value="90" id="keterampilan-semester-1">
+        </div>
+        <div class="f-number">
+        <label for="keterampilan-semester-2">Semester 2 :</label>
+        <input type="number" value="90" id="keterampilan-semester-2">
+        </div>
+        </div>
+        <div class="f-space">
+        <div class="f-number">
+        <label for="keterampilan-semester-3">Semester 3 :</label>
+        <input type="number" value="90" id="keterampilan-semester-3">
+        </div>  
+        <div class="f-number">
+        <label for="keterampilan-semester-4">Semester 4 :</label>
+        <input type="number" value="90" id="keterampilan-semester-4">
+        </div>
+        </div>
+        <div class="f-space">
+        <div class="f-number">
+        <label for="keterampilan-semester-5">Semester 5 :</label>
+        <input type="number" value="90" id="keterampilan-semester-5">
+        </div>
+        <div class="f-number">
+        <label for="keterampilan-semester-6">Semester 6 : </label>
+        <input type="number" value="90" id="keterampilan-semester-6">
+        </div>  
+        </div>
+        <br>
+        <input type="submit" value="Submit" data-aos="fade-right" data-aos-delay="650" data-aos-offset="30">
+      </form>
+      </div>
+      <!-- End Form -->
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          duration: 1000,
+        })
+        const hamburger = document.querySelector(".hamburger")
+        const navMenu = document.querySelector(".nav-menu")
+  
+        hamburger.addEventListener("click", ()=>{
+          hamburger.classList.toggle("active")
+          navMenu.classList.toggle("active")
+        })
+      </script>
+</body>
+</html>

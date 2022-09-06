@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Gambar/logo-web.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>My Web</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav data-aos="fade-down">
+      <div class="nav-center">
+      <h1 class="logo">Portfo<span>lio</span></h1>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html">Beranda</a></li>
+        <li class="nav-item d-trigger"><a href="about.html">
+          Tentang</a>
+          <div class="dropdown">
+            <ul>
+              <li><a href="about.html#tentang">Tentang</a></li>
+              <li><a href="about.html#hobi">Hobi</a></li>
+              <li><a href="about.html#skill">Skill</a></li>
+              <li><a href="about.html#riwayat-pendidikan">Riwayat Pendidikan</a></li>
+              <li><a href="about.html#riwayat-organisasi">Riwayat Organisasi</a></li>
+              <li><a href="about.html#riwayat-prestasi">Riwayat Prestasi</a></li>
+              <li><a href="about.html#mata-pelajaran">Nilai</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="form.html">Form</a>
+        </li>
+        <li>
+          <a href="project.html">Projek</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Pengenalan -->
+    <!-- <div class="home">
+      <video autoplay loop>
+        <source src="Video&Audio/y2mate.com - Rebirth Introducing photorealism in UE4_1080p (online-video-cutter.com).mp4">
+      </video>
+    </div> -->
+    <div class="home1 overflow">
+      <h1 data-aos="fade-right" data-aos-delay="350">
+        <mark><del>II</del>arry</mark> Siloam
+      </h1>
+      <img class="img-beranda"src="Gambar/Foto.jpg" alt="gambar" data-aos="flip-left" data-aos-delay="500"/>
+      <div class="icon" data-aos="flip-right" data-aos-delay="650">
+        <a target="blank" href="https://www.instagram.com/harry.siloam/">
+          <i class="fa-brands fa-square-instagram"></i>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/harry-siloam-b57639249/">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+      <p data-aos="fade-left" data-aos-delay="700" data-aos-offset="20px">
+        Hai gess, Nama saya <b>Harry Siloam Sidabalok</b>, biasa dipanggil
+        <strong>Harry</strong>. Saya tertarik dengan pemprograman
+        <i>web</i> sejak kelas 8 SMP. Sekarang saya bersekolah di SMKN 1 Kota
+        Bekasi kelas <sup>11</sup> RPL <sub>B</sub>.Saya dapat membuat website
+        menggunakan bahasa program seperti <b>HTML, CSS, dan Javascript</b>.
+        Saya sekarang sedang mendalami <i>framework</i> seperti <strong>React</strong> dan
+        <strong>Bootstrap</strong>. Moto hidup saya adalah "<em
+          >Do the best and God will do the rest</em
+        >"
+      </p>
+    </div>
+    <!-- End Pengenalan -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+      })
+      const hamburger = document.querySelector(".hamburger")
+      const navMenu = document.querySelector(".nav-menu")
+
+      hamburger.addEventListener("click", ()=>{
+        hamburger.classList.toggle("active")
+        navMenu.classList.toggle("active")
+      })
+    </script>
+  </body>
+</html>
