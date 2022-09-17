@@ -129,58 +129,129 @@ a {
   -webkit-transition: all 0.3s ease-in-out;
   background-color: var(--red);
 }
-/* End Hamburger */
-/* beranda */
-/* .home1{
+.home{
+  overflow-x: auto;
+}
+.cover-video{
   width: 100%;
-  height: 100vh;
+  position: relative;
+  max-height: 100vh;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  overflow: hidden;
-  
 }
-video{
+.cover-video video{
+  width: 100% ;
+  height: 100% ;
+  opacity: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cover-text{
+  position: absolute;
+  color:rgb(196, 15, 51);
+  z-index: 5;
+  font-family: 'Ubuntu', sans-serif; 
+}
+.cover-text *{
+  margin: 0;
+  padding: 0;
+}
+/* .cover-text h1:hover,
+.cover-text h3:hover{
+} */
+.typing{
+  overflow: hidden;
+  width: 100%;
+}
+.typing h1{
+  -webkit-text-stroke: 7px rgb(255, 11, 56);
+  color: transparent;
+  font-size: 12rem;
+  font-weight: 500;
+  font-style: italic;
+  width: 0 !important;
+  position: relative;
+}
+.typing h1::before{
+  /* background-color: aqua; */
+  border-right: 15px solid var(--color1);
+  content: "Harry";
+  width: 0;
+  left: 0;
+  top: 0;
+  position: absolute;
+  color: rgb(255, 11, 56);
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+
+@keyframes animate{
+  0%, 100%{
+    width: 0;
+  }
+  50%,90%{
+    width: 550px;
+  }
+}
+/* .cover h1::before{
+  border-right: 10px solid var(--color1);
+  width: 0;
+  position: absolute;
+  content: attr(data-text);
+  color: var(--red) !important;
   width: 100%;
   height: 100%;
-  position: relative;
-  padding-bottom: 200px;
-  /* bottom: -2000px; 
-}*/
-/* .home{
-  background-color: aqua;
-}  */
-.home1 {
+  top: 0;
+  left: 0;
+  z-index: 111;
+ } */
+.cover-text h3{
+  font-size: 3rem;
+  font-weight: 700;
+  -webkit-text-stroke: 2.5px rgb(255, 11, 56);
+}
+.info-pengenalan{
+  padding: 100px 20px;
+  max-width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+}
+.info-pengenalan img{
+  border-radius: 50%;
+  max-height: 300px !important;
+  max-width: 300px !important; 
+  border: 5px solid#808080;
+  margin-left: 150px;
+}
+.info-text p{
+  margin-left: 150px;
+  margin-right: 150px;
+  background-image: url(Gambar/pexels-jakub-novacek-924824.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: scroll;
-  background-image: url(Gambar/pexels-jakub-novacek-924824.jpg);
-  padding-top: 70px;
-  padding-bottom: 20px;
+  opacity: 75%;
+  padding: 20px;
+  border-radius: 15px;
 }
-.home1 h1 {
-  font-size: 2.5rem;
-}
-.home1 p {
-  font-size: 1.1rem;
-  padding-left: 5%;
-  padding-right: 5%;
+.icon-center{
+  margin-top: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .icon{
   display: flex;
-  width: 250px;
+  width: 50%;
   justify-content: space-between;
   text-align: center;
 }
 .icon i{
   font-size: 3rem;
-  color: var(--red)x;
+  color: var(--color2);
 }
 /* End Beranda */
 /* Gambar */
@@ -243,11 +314,16 @@ em {
   justify-content: center;
   align-items: center;
   max-width: 100%;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: var(--dark);
+  border-radius: 30px;
+}
+.form-container h2{
+  text-align: center;
 }
 form{
-  width: 50%;
+  width: 75%;
 }
 .form-center{
   display: flex;
@@ -460,19 +536,59 @@ input[type=submit]:hover{
   .d-trigger:hover .dropdown{
     display: none;
   }
-  .home1{
-    height:100%;
-    padding-top: 80px;
-    padding-bottom: 30px;
+  .cover-video{
+    margin-top: 7vh;
+    height: 230px !important;
+    width: 100% !important;
+    background-color: var(--dark);
+  }
+  .typing h1{
+    font-size: 4.5rem;
+    -webkit-text-stroke: 5px rgb(182, 33, 60);
+  }
+  .typing h1::before{
+    color: rgb(182, 33, 60);
+    border-right: 5px solid var(--color1);
+  }
+  @keyframes animate{
+    0%, 100%{
+      width: 0;
+    }
+    50%,90%{
+      width: 250px;
+    }
+  }
+  .cover-text h3{
+    font-size: 1.05rem;
+    -webkit-text-stroke: 0.25px rgb(255, 11, 56);
+  }
+  .info-pengenalan{
+    flex-direction: column;
+    padding: 35px 20px;
+  }
+  .info-pengenalan img,
+  .info-pengenalan p{
+    margin-left:0 ;
+  }
+  .info-pengenalan img{
+    height: 200px !important;
+    width: 200px !important;
+  }
+  .info-pengenalan p{
+    margin-top: 40px;
+    width: 90%;
   }
   h1{
-    font-size: 2rem !important;
+    font-size: 2rem ;
+  }
+  .icon-center{
+    margin-top: 25px;
   }
   .icon{
     width: 200px;
   }
   .icon i{
-    font-size: 2.5rem;
+    font-size: 1rem;
   }
   img{
     height: 250px !important;
@@ -494,17 +610,19 @@ input[type=submit]:hover{
     font-size: 0.9rem !important;
   }
   .last{
-    padding-bottom: 5rem !important;
+    margin-bottom: 5rem !important;
   }
   .tentang{
     padding-bottom: 0;
     padding-top: 2.5rem;
   }
   .form-container{
-    margin-top: 50px;
+    margin-top: 85px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   form{
-    width: 100%;
+    width: 85%;
   }
   .ttl{
     max-width: 47% !important;
